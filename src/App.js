@@ -3,12 +3,14 @@ import Column from "./components/Column/Column";
 import Main from "./components/Main/Main";
 function App() {
   return (
-    <div className="container">
-      <Column>To Do</Column>
-      <Column>In Progress</Column>
-      <Column>Review</Column>
-      <Column>Done</Column>
-    </div>
+    <Main>
+      <div className="container">
+        <Column>To Do</Column>
+        <Column>In Progress</Column>
+        <Column>Review</Column>
+        <Column>Done</Column>
+      </div>
+    </Main>
   );
 }
 
