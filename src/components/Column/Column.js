@@ -1,12 +1,16 @@
 import "./styles.css";
 
 const Column = (props) => {
-  const { children, icone } = props;
+  const { children, status, as } = props;
 
   return (
-    <div className="column">
-      <p>{children}</p>
-    </div>
+    <section>
+      <div className={`top-column status-${status}-top`}></div>
+      <div className={`column status-${status}`}>
+        <img className="img" src="./img/Done.png" />
+        <p>{children}</p>
+      </div>
+    </section>
   );
 };
 
