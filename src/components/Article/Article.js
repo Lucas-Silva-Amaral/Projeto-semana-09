@@ -1,8 +1,9 @@
-import React from "react"
-import "./styles.css"
+import React from "react";
+import "./styles.css";
 
 const Article = (props) => {
-  const { title, image, tag } = props
+  const { title, image, tag } = props;
+
   return (
     <article className="article">
       <h3 className="article-title">{title}</h3>
@@ -11,7 +12,7 @@ const Article = (props) => {
         <p className="tag">{tag}</p>
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default Article
+export default Article;
