@@ -12,9 +12,14 @@
   width: 300px;
   padding: 10px;
   background-color: rgba(128, 128, 128, 0.616);
-  margin: 0px 5px 5px 5px;
+  margin: 0px 5px 0px 5px;
   border-radius: 0px 0px 4px 4px;
   flex-direction: column;
+}
+
+.column-title {
+  display: flex;
+  gap: 10px;
 }
 
 p {
