@@ -1,4 +1,3 @@
-
 /* Reset css */
 * {
   box-sizing: border-box;
@@ -18,6 +17,6 @@ body {
   background-color: #e1e8ed;
   background-repeat: no-repeat;
   display: flex;
-  margin-left: 58px;
+
   gap: 35px;
 }
