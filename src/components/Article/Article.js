@@ -2,17 +2,19 @@ import React from "react";
 import "./styles.css";
 
 const Article = (props) => {
-  const { title, image, tag } = props;
+  const { name, image, tag, bgTag } = props
 
-  return (
+ return (
     <article className="article">
-      <h3 className="article-title">{title}</h3>
+      <h3 className="article-title">{name}</h3>
       <div className="article-info">
         <img className="img" src={image} alt="User" />
-        <p className="tag">{tag}</p>
+        <p className="tag" style={{ backgroundColor: `${bgTag}` }}>
+          {tag}
+        </p>
       </div>
     </article>
-  );
-};
+  )
+}
 
 export default Article;

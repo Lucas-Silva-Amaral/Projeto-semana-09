@@ -1,8 +1,17 @@
-import "./Main.css";
+import "./Main.css"
+import Title from "../Title/Title"
+import Column from "../Column/Column"
+import dataColumn from "../consts/data"
 
-const Main = (props) => {
-  const { children } = props;
-  return <div className="bg-home">{children}</div>;
-};
+const Main = () => {
+  return (
+    <div className="bg-home">
+      <Title>Kanbam</Title>
+      <div className="column-display">
+        <Column data={dataColumn}></Column>
+      </div>
+    </div>
+  )
+}
 
-export default Main;
+export default Main
