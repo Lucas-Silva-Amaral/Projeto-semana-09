@@ -13,9 +13,8 @@ const Column = (props) => {
     <section>
       <div className={`top-column status-${status}-top`}></div>
       <div className={`column status-${status}`}>
-        <div>
+        <div className="column-title">
           <img
-            className="img"
             src={
               status === "to-do"
                 ? toDo
@@ -28,6 +27,14 @@ const Column = (props) => {
           />
           <p>{children}</p>
         </div>
+        {status === "review" ? (
+          <Article />
+        ) : status === "done" ? (
+          <Article />
+        ) : (
+          ""
+        )}
+        <Article />
         <Article />
       </div>
     </section>
