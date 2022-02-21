@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import Article from "./components/Article/Article";
+
 import Column from "./components/Column/Column";
 import Main from "./components/Main/Main";
 
@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Main>
-        <Header>Kanban</Header>
-        <Article />
+        <Header className="container">Kanban</Header>
+
         <div className="container">
           <Column status="to-do">To Do</Column>
           <Column status="in-progress">In Progress</Column>
