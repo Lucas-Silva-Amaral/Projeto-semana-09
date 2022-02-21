@@ -3,5 +3,6 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2.375rem;
   font-weight: 700;
-  margin: 41px 0 58px 60px;
+  margin: 0 0 58px 60px;
+  padding: 41px 0 0 0;
 }
